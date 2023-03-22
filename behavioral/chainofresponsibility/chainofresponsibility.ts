@@ -60,4 +60,4 @@ const client: Client = new Client(handler1);
 
 client.makeRequest(5);
 client.makeRequest(15);
-client.makeRequest
+client.makeRequest(25);

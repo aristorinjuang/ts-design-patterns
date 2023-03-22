@@ -8,7 +8,7 @@ class RealSubject implements Subject {
   }
 }
 
-class Proxy implements Subject {
+class _Proxy implements Subject {
   private realSubject: RealSubject | null = null;
 
   public do(): string {
@@ -21,6 +21,6 @@ class Proxy implements Subject {
   }
 }
 
-const subject: Subject = new Proxy();
+const subject: Subject = new _Proxy();
 const result = subject.do();
 console.log(result);
